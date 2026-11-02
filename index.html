@@ -88,6 +88,8 @@ main{min-width:0}
 .pill.sample{border-style:dashed;color:var(--muted);background:transparent}
 .pill.up{color:var(--good)}
 /* exercises added in the next block */
+/* personal conditioning plan under a member's session */
+.note.cardio{border-left:4px solid #FF7A45}
 .pill.new{background:#FF7A45;color:#fff;border-color:transparent;gap:4px}
 .seg{display:inline-flex;padding:4px;gap:4px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);flex-wrap:wrap}
 .seg button{border:0;background:transparent;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;color:var(--muted)}
@@ -374,7 +376,7 @@ en:{
  p_lead:'Same three sessions every week, adding load as reps got easier.',
  weeks:'weeks',planned_sessions:'planned sessions',exercises:'exercises',slots:'slots per week',avg_gain_of:'{name} · average load gain',
  weekly_sessions:'Weekly sessions',day_count:'{day} · {n} exercises',s_start:'1 Aug',s_finish:'30 Oct',s_both:'Both',
- rest:'Rest {n}s',from:'from {v}',held:'4 × 10 held all block',bw:'Bodyweight',bw_plus:'BW + {v} kg',
+ rest:'Rest {n}s',from:'from {v}',held:'4 × 10 held all block',bw:'Bodyweight',bw_plus:'BW + {v} kg',assisted:'Assisted −{v} kg',
  vol_balance:'Volume balance',hard_sets:'Hard sets per week',sets_tip:'{g}: {n} sets per week',
  vol_note:'Back gets 18 sets, but 12 of them are bodyweight pull-ups. Core gets none.',
  review:'Coach review',review_sample:'sample data',review_log:'from the log of {name}',review_h:'What the block tells us',
@@ -414,7 +416,7 @@ en:{
  ch3:'<b>Core twice a week.</b> Hanging leg raise and plank, from zero sets before.',
  ch4:'<b>Face pulls, one-arm rows and inverted rows.</b> More upper-back work to balance the pressing days.',
  ch5:'<b>Test week 25–31 Jan.</b> 3RM squat, bench, deadlift and dumbbell shoulder press, max pull-ups, bodyweight and waist.',
- close:'Close',new_next:'New next block',cues:'Coaching cues',old_block:'Aug – Oct block · {name}',held_modal:'4 × 10 at bodyweight, all block',next_block:'Next block · {day} · {role}',th_phase:'Phase',th_sr:'Sets × reps',th_load:'Load',top3:'Top set × 3RM',first_week:'First week of each phase.',
+ close:'Close',cardio_h:'Conditioning · fat loss',joined_sep:'Started 1 Sep 2026 · 2-month block',new_next:'New next block',cues:'Coaching cues',old_block:'Aug – Oct block · {name}',held_modal:'4 × 10 at bodyweight, all block',next_block:'Next block · {day} · {role}',th_phase:'Phase',th_sr:'Sets × reps',th_load:'Load',top3:'Top set × 3RM',first_week:'First week of each phase.',
  role_main:'Main lift',role_secondary:'Secondary',role_accessory:'Accessory',role_core:'Core',
  kg:'kg',t:'t',cm:'cm',
  ph_build:'Build',ph_strength:'Strength',ph_deload:'Deload',ph_peak:'Peak',ph_test:'Test',
@@ -437,7 +439,7 @@ hy:{
  p_lead:'Նույն երեք մարզումները ամեն շաբաթ, քաշը՝ աճող կրկնություններին զուգահեռ։',
  weeks:'շաբաթ',planned_sessions:'պլանավորված մարզում',exercises:'վարժություն',slots:'վարժություն շաբաթական',avg_gain_of:'{name} · քաշի միջին աճ',
  weekly_sessions:'Շաբաթական մարզումներ',day_count:'{day} · {n} վարժություն',s_start:'օգոս 1',s_finish:'հոկտ 30',s_both:'Երկուսը',
- rest:'Հանգիստ {n} վ',from:'սկզբում՝ {v}',held:'4 × 10 ամբողջ ծրագրում',bw:'Սեփական քաշ',bw_plus:'Սեփ. քաշ + {v} կգ',
+ rest:'Հանգիստ {n} վ',from:'սկզբում՝ {v}',held:'4 × 10 ամբողջ ծրագրում',bw:'Սեփական քաշ',bw_plus:'Սեփ. քաշ + {v} կգ',assisted:'Օժանդակ՝ −{v} կգ',
  vol_balance:'Ծավալի հավասարակշռություն',hard_sets:'Ծանր սեթեր շաբաթական',sets_tip:'{g}՝ {n} սեթ շաբաթական',
  vol_note:'Մեջքը ստանում է 18 սեթ, բայց դրանցից 12-ը սեփական քաշով ձգումներ են։ Core-ը՝ ոչ մեկը։',
  review:'Մարզչի վերլուծություն',review_sample:'օրինակային տվյալներ',review_log:'գրանցումներից՝ {name}',review_h:'Ինչ ցույց տվեց ծրագիրը',
@@ -477,7 +479,7 @@ hy:{
  ch3:'<b>Core՝ շաբաթը երկու անգամ։</b> Կախված ոտքերի բարձրացում և պլանկ՝ նախկին զրո սեթի փոխարեն։',
  ch4:'<b>Դեմքին ձգում, մեկ ձեռքով և շրջված թիավարում։</b> Ավելի շատ աշխատանք վերին մեջքի համար՝ սեղմման օրերը հավասարակշռելու նպատակով։',
  ch5:'<b>Թեստային շաբաթ՝ հունվ 25–31։</b> 3RM՝ սքվոթ, պառկած սեղմում, մեռյալ ձգում և նստած սեղմում հանտելներով, առավելագույն ձգումներ, քաշ և գոտկատեղ։',
- close:'Փակել',new_next:'Նոր՝ հաջորդ ծրագրում',cues:'Մարզչի խորհուրդներ',old_block:'Օգոս – Հոկտ ծրագիր · {name}',held_modal:'4 × 10 սեփական քաշով, ամբողջ ծրագրում',next_block:'Հաջորդ ծրագիր · {day} · {role}',th_phase:'Փուլ',th_sr:'Սեթ × կրկն.',th_load:'Քաշ',top3:'Գլխավոր սեթ × 3RM',first_week:'Յուրաքանչյուր փուլի առաջին շաբաթը։',
+ close:'Փակել',cardio_h:'Կոնդիցիոն · ճարպայրում',joined_sep:'Սկսել է՝ սեպտ 1, 2026 · 2 ամսվա ծրագիր',new_next:'Նոր՝ հաջորդ ծրագրում',cues:'Մարզչի խորհուրդներ',old_block:'Օգոս – Հոկտ ծրագիր · {name}',held_modal:'4 × 10 սեփական քաշով, ամբողջ ծրագրում',next_block:'Հաջորդ ծրագիր · {day} · {role}',th_phase:'Փուլ',th_sr:'Սեթ × կրկն.',th_load:'Քաշ',top3:'Գլխավոր սեթ × 3RM',first_week:'Յուրաքանչյուր փուլի առաջին շաբաթը։',
  role_main:'Հիմնական',role_secondary:'Երկրորդային',role_accessory:'Օժանդակ',role_core:'Core',
  kg:'կգ',t:'տ',cm:'սմ',
  ph_build:'Հիմք',ph_strength:'Ուժ',ph_deload:'Թեթևացում',ph_peak:'Գագաթ',ph_test:'Թեստ',
@@ -600,7 +602,17 @@ const TEAM=[
   loads:{squat:[60,80],bench:[60,75],pullup:[null,null],bbrow:[40,60],lateral:[60,90],bbcurl:[25,30],skull:[20,25],rdl:[25,30],incline:[25,30],hammer:[12.5,15],pushdown:[55,85],legpress:[100,150],ohp:[40,40],cablerow:[50,57.5],mcurl:[10,20],ohext:[20,30],calf:[60,80]}},
  {id:'dazatyan',name:'Davit Azatyan',hy:'Դավիթ Ազատյան',sh:'Davit Az.',shHy:'Դավիթ Ազ.',sample:true,f:1,g:.3,av:{bg:'#B49AF0',skin:'#F0BFA4',hair:'#3b2a22',k:19,kc:23.5,jw:20,chin:83,ed:9.6,look:0,lid:2.2,brow:[1.4,1.6],nose:'wide',ny:60,mouth:'flat',my:71,style:'pomp',shadow:'blue',earring:true,shirt:'#1d1d1f',top:'vneck',blush:.45}},
  {id:'hmanukyan',name:'Hovhannes Manukyan',hy:'Հովհաննես Մանուկյան',sample:true,f:1.15,g:.22,av:{bg:'#74CDBB',skin:'#F6BCA8',hair:'#F2EFE9',browC:'#e9e5dd',k:20,kc:21,jw:17,chin:80,ed:9.6,look:0,lid:1.8,brow:[1.6,-1],nose:'red',ny:58,mouth:'hidden',style:'oldwhite',beard:'whitebeard',shirt:'#6B4630',top:'jacket',blush:.55}},
- {id:'vzargaryan',name:'Vahagn Zargaryan',hy:'Վահագն Զարգարյան',sample:true,f:.85,g:.42,av:{bg:'#F2D15A',skin:'#D49A6E',hair:'#1c1715',k:21,kc:25,jw:21,chin:81,ed:9.8,look:0,brow:[1.2,0],nose:'round',ny:59,mouth:'hidden',my:69,style:'cap',cap:'#3E8E6A',beard:'stache',double:true,shirt:'#E8742E',top:'collar',blush:.4}},
+ {id:'vzargaryan',name:'Vahagn Zargaryan',hy:'Վահագն Զարգարյան',height:166,weight:96,sample:false,joined:true,proteinKg:80,
+  // assisted pull-up machine: kg of assistance at start / finish; next block keeps assisting (negative = assistance)
+  assist:{pullup:[75,60]},known:{deadlift:80},
+  fixed:{wpullup:[-60,-60,-55,-55,-50,-45,-45,-40,-50,-40,-35,-35,-40],chinup:[-55,-55,-50,-50,-45,-40,-40,-35,-45,-35,-30,-30,-35]},
+  cardio:{mins:{Mon:20,Wed:20,Fri:15},
+   en:{Mon:'Incline treadmill walk · 20 min · 10–12% incline, 4.5–5.5 km/h · heart rate 115–135',Wed:'Bike or rower intervals · 20 min · 5 min easy, then 8 × (30 s hard / 90 s easy), 3 min easy',Fri:'Bike, zone 2 · 15 min · steady pace, you can still talk in full sentences',
+     all:['Every day: 8,000–10,000 steps','Food: about 400 kcal a day below maintenance, 130–150 g protein','Weekend: one 40-minute walk or swim','Track: weigh in 3× a week (same time), waist every 2 weeks · target −0.5 to −0.8 kg a week']},
+   hy:{Mon:'Քայլք թեք վազքուղու վրա · 20 րոպե · 10–12% թեքություն, 4.5–5.5 կմ/ժ · սրտի զարկ 115–135',Wed:'Հեծանիվ կամ թիավարում՝ ինտերվալներ · 20 րոպե · 5 րոպե թեթև, հետո 8 × (30 վ ինտենսիվ / 90 վ թեթև), 3 րոպե թեթև',Fri:'Հեծանիվ, 2-րդ գոտի · 15 րոպե · հանգիստ տեմպ, կարող եք խոսել ամբողջական նախադասություններով',
+     all:['Ամեն օր՝ 8 000–10 000 քայլ','Սնունդ՝ օրական մոտ 400 կկալ պահպանման մակարդակից պակաս, 130–150 գ սպիտակուց','Հանգստյան օրերին՝ մեկ 40 րոպեանոց քայլք կամ լող','Հետևեք՝ կշռվել շաբաթը 3 անգամ (նույն ժամին), գոտկատեղը՝ 2 շաբաթը մեկ · նպատակ՝ −0.5…−0.8 կգ շաբաթական']}},
+  av:{bg:'#F2D15A',skin:'#D49A6E',hair:'#1c1715',k:21,kc:25,jw:21,chin:81,ed:9.8,look:0,brow:[1.2,0],nose:'round',ny:59,mouth:'hidden',my:69,style:'cap',cap:'#3E8E6A',beard:'stache',double:true,shirt:'#E8742E',top:'collar',blush:.4},
+  loads:{squat:[50,70],bench:[45,60],pullup:[null,null],bbrow:[35,40],lateral:[35,50],bbcurl:[15,20],skull:[15,20],rdl:[15,20],incline:[17.5,25],hammer:[12.5,17.5],pushdown:[50,65],legpress:[50,100],ohp:[30,40],cablerow:[50,60],mcurl:[12.5,15],ohext:[15,17.5],calf:[60,70]}},
  {id:'akojoyan',name:'Andranik Kojoyan',hy:'Անդրանիկ Կոջոյան',sample:true,f:1.05,g:.33,av:{bg:'#E48DC2',skin:'#A8714A',hair:'#777674',browC:'#3f3c3a',stache:'#4d4a48',k:18.5,kc:19,jw:13,chin:82,ed:9.4,look:0,lid:1.6,brow:[1.3,-.6],nose:'long',ny:61,mouth:'hidden',my:70,style:'greyside',beard:'stache',shirt:'#F2C94C',top:'collar',blush:.2}}
 ];
 // Sample results are generated from the real program so every view can be prototyped. Clearly tagged "Sample".
@@ -655,7 +667,7 @@ const short=m=>{if(m.sh)return lang==='hy'?m.shHy:m.sh;const [a,b]=nm(m).split('
 function niceStep(max,n=4){const raw=max/n,p=Math.pow(10,Math.floor(Math.log10(raw))),f=raw/p;return (f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10)*p}
 function e1own(m,k){const v=m.loads[k]?.[1];return v==null?null:v*(1+REPS[k]/30)}
 function e1rm(m,k){const kn=m.known?.[k];if(kn)return Array.isArray(kn)?kn[0]*(1+kn[1]/30):kn;const b=EX[k].basis;if(!b)return e1own(m,k);if(b.bwFrom)return m.weight==null?null:m.weight*(1+REPS[b.bwFrom]/30)*b.ratio;const v=e1own(m,b.from);return v==null?null:v*b.ratio}
-function sessionVol(m,day,i){let s=0;for(const [k,se,re] of CURRENT[day]){let v=EX[k].bw?m.weight:total(k,m.loads[k][i]);if(v)s+=se*re*v}return s}
+function sessionVol(m,day,i){let s=0;for(const [k,se,re] of CURRENT[day]){let v=EX[k].bw?(m.weight&&m.assist?.[k]?m.weight-m.assist[k][i]:m.weight):total(k,m.loads[k][i]);if(v)s+=se*re*v}return s}
 function avgGain(m){const g=UNIQUE.map(k=>pct(m.loads[k][0],m.loads[k][1])).filter(v=>v!=null);return g.reduce((a,b)=>a+b,0)/g.length}
 function groupGains(m){const o={};for(const k of UNIQUE){const p=pct(m.loads[k][0],m.loads[k][1]);if(p==null)continue;(o[EX[k].g]=o[EX[k].g]||[]).push(p)}return Object.entries(o).map(([g,a])=>[g,a.reduce((x,y)=>x+y,0)/a.length]).sort((a,b)=>b[1]-a[1])}
 function planItem(m,it,week){
@@ -664,7 +676,7 @@ function planItem(m,it,week){
   const o={sets,reps,rpe:Math.round((10-R)*2)/2,rest,ph};
   if(it.r==='core'){o.repsTxt=ex.core[ph];o.load=ex.loadTxt||t('bw');return o}
   o.repsTxt=ph==='test'&&it.r==='main'?'3RM':reps+(it.per?t('per_leg'):it.perArm?t('per_arm'):'');
-  const fx=m.fixed?.[it.k];if(fx){o.v=fx[week-1];o.load=ex.bw?(o.v>0?t('bw_plus',{v:fmt(o.v)}):t('bw')):ex.pair?`2 × ${kg(o.v)}`:kg(o.v);return o}
+  const fx=m.fixed?.[it.k];if(fx){o.v=fx[week-1];o.load=ex.bw?(o.v>0?t('bw_plus',{v:fmt(o.v)}):o.v<0?t('assisted',{v:fmt(-o.v)}):t('bw')):ex.pair?`2 × ${kg(o.v)}`:kg(o.v);return o}
   const e=e1rm(m,it.k);
   if(e==null){o.load=ex.bw?t('bw'):t('by_rpe');return o}
   const tot=e*(1+.005*(week-1))/(1+(reps+R)/30);
@@ -967,12 +979,12 @@ function viewProgram(){
       <div class="row">${segBtns('progDay',DAYS.map(d=>[d,dS(d)]))}${segBtns('progShow',[['start',t('s_start')],['finish',t('s_finish')],['both',t('s_both')]])}</div></div>
     <div class="ex-grid">${CURRENT[st.progDay].map(([k,se,re,rest])=>{
       const [a,b]=m.loads[k],p=pct(a,b),ex=X(k);
-      const val=st.progShow==='start'?loadTxt(k,a):loadTxt(k,b);
+      const as=m.assist?.[k],val=as?t('assisted',{v:fmt(st.progShow==='start'?as[0]:as[1])}):st.progShow==='start'?loadTxt(k,a):loadTxt(k,b);
       return `<button type="button" class="ex" data-open="${k}">
         <div class="tile">${figSVG(k)}<span class="pill tag ghost">${gN(ex.g)}</span>${p!=null&&st.progShow!=='start'?`<span class="pill acc tag2">${fmtPct(p)}</span>`:''}</div>
         <div class="ex-body"><h3>${ex.n}</h3>
           <div class="ex-meta num"><span>${se} × ${re}</span><span>${t('rest',{n:rest})}</span><span>${ex.eq}</span></div>
-          <div class="ex-load"><span class="v num">${val}</span>${st.progShow==='both'&&!ex.bw?`<span class="from num">${t('from',{v:loadTxt(k,a)})}</span>`:ex.bw?`<span class="from">${t('held')}</span>`:''}</div></div></button>`}).join('')}</div>
+          <div class="ex-load"><span class="v num">${val}</span>${as?(st.progShow==='both'?`<span class="from num">${t('from',{v:'−'+fmt(as[0])+' '+t('kg')})}</span>`:''):st.progShow==='both'&&!ex.bw?`<span class="from num">${t('from',{v:loadTxt(k,a)})}</span>`:ex.bw?`<span class="from">${t('held')}</span>`:''}</div></div></button>`}).join('')}</div>
   </section>
   <section class="grid g2">
     <div class="card"><div class="card-h"><div><span class="eyebrow">${t('vol_balance')}</span><h2>${t('hard_sets')}</h2></div></div>
@@ -1004,7 +1016,7 @@ function viewDashboard(){
   ${memberStrip('member',team)}
   <section class="grid g2 g-prof">
     <div class="card pcard"><div class="person">${avatar(m,96)}<div style="min-width:0"><div class="row"><h2>${nm(m)}</h2>${m.sample?`<span class="pill sample">${t('sample_data')}</span>`:`<span class="pill acc">${t('logged')}</span>`}</div>
-      <p class="muted" style="margin-top:4px">${t('d_sub')}</p></div></div>
+      <p class="muted" style="margin-top:4px">${t('d_sub')}</p>${m.joined?`<p class="muted" style="font-size:13px">${t('joined_sep')}</p>`:''}</div></div>
       <div class="pfacts num">
         <div class="${m.height?'':'pending'}"><span>${t('height')}</span><b>${m.height?m.height+' '+t('cm'):'—'}</b></div>
         <div class="${m.weight?'':'pending'}"><span>${t('weight')}</span><b>${m.weight?kg(m.weight):'—'}</b></div>
@@ -1095,7 +1107,7 @@ function viewPlan(){
     <div class="phase-legend">${Object.entries(PH).map(([k,p])=>`<span><i class="ph-${k}"></i>${phN(k)}</span>`).join('')}</div></section>
   ${memberStrip('planMember',shownTeam())}
   <section class="grid" style="gap:14px">
-    <div class="section-h"><div><span class="eyebrow">${t('plan_for',{name:first(m)})}${m.sample?t('sample_nums'):''}</span><h2>${t('about_min',{day:dL(st.planDay),n:sessionMinutes(st.planDay,st.week)})}</h2></div>${segBtns('planDay',DAYS.map(d=>[d,dS(d)]))}</div>
+    <div class="section-h"><div><span class="eyebrow">${t('plan_for',{name:first(m)})}${m.sample?t('sample_nums'):''}</span><h2>${t('about_min',{day:dL(st.planDay),n:sessionMinutes(st.planDay,st.week)+(m.cardio?.mins?.[st.planDay]||0)})}</h2></div>${segBtns('planDay',DAYS.map(d=>[d,dS(d)]))}</div>
     <div class="note" style="flex-direction:row;flex-wrap:wrap;gap:10px 22px;align-items:center"><b>${t('wu')}</b><span class="muted">${t('wu1')}</span><span class="muted">${t('wu2')}</span><span class="muted">${t('wu3')}</span></div>
     <div class="ex-grid">${NEXT[st.planDay].map(it=>{const ex=X(it.k),o=planItem(m,it,st.week);
       return `<button type="button" class="ex${ex.isNew?' is-new':''}" data-open="${it.k}">
@@ -1104,7 +1116,7 @@ function viewPlan(){
           <div class="presc num"><div><span>${t('sets')}</span><b>${ph==='test'&&it.r==='main'?t('top_set'):o.sets}</b></div><div><span>${t('reps')}</span><b>${o.repsTxt}</b></div><div><span>${t('rpe')}</span><b>${it.r==='core'?'—':o.rpe}</b></div></div>
           <div class="ex-load"><span class="v num">${o.load}</span><span class="from">${t('rest',{n:o.rest})}</span></div>
           ${REPLACES[it.k]?`<span class="muted" style="font-size:12px">${t('replaces',{x:rep(it.k)})}</span>`:''}</div></button>`}).join('')}</div>
-    ${st.planDay==='Fri'&&ph!=='deload'&&ph!=='test'?`<div class="note" style="flex-direction:row;flex-wrap:wrap;gap:10px 22px;align-items:center"><b>${t('fin')}</b><span class="muted">${t('fin_p')}</span></div>`:''}
+    ${m.cardio?cardioNote(m):''}${st.planDay==='Fri'&&ph!=='deload'&&ph!=='test'&&!m.cardio?`<div class="note" style="flex-direction:row;flex-wrap:wrap;gap:10px 22px;align-items:center"><b>${t('fin')}</b><span class="muted">${t('fin_p')}</span></div>`:''}
   </section>
   <section class="grid g2">
     <div class="card"><div class="card-h"><div><span class="eyebrow">${t('prog_eyebrow')}</span><h2>${t('prog_h')}</h2></div></div>
@@ -1112,7 +1124,7 @@ function viewPlan(){
         <div class="note"><h3>${t('dp_h')}</h3><p>${t('dp_p')}</p></div>
         <div class="note"><h3>${t('rpe_h')}</h3><p>${t('rpe_p')}</p></div>
         <div class="note"><h3>${t('miss_h')}</h3><p>${t('miss_p')}</p></div>
-        <div class="note"><h3>${t('rec_h')}</h3><p>${t('rec_p',{extra:m.weight?t('rec_extra',{name:first(m),a:Math.round(m.weight*1.6),b:Math.round(m.weight*2.2)}):''})}</p></div>
+        <div class="note"><h3>${t('rec_h')}</h3><p>${t('rec_p',{extra:m.weight?t('rec_extra',{name:first(m),a:Math.round((m.proteinKg||m.weight)*1.6),b:Math.round((m.proteinKg||m.weight)*2.2)}):''})}</p></div>
       </div></div>
     <div class="card"><div class="card-h"><div><span class="eyebrow">${t('ws_eyebrow')}</span><h2>${t('ws_h')}</h2></div></div>
       <div class="chart-legend" style="margin-bottom:12px"><span><i class="k-before"></i>${t('old_lbl')}</span><span><i class="k-after"></i>${t('new_lbl')}</span></div>
@@ -1120,11 +1132,13 @@ function viewPlan(){
       <div style="margin-top:16px">${['ch1','ch2','ch3','ch4','ch5'].map(c=>`<div class="change"><span class="arrow">→</span><span>${t(c)}</span></div>`).join('')}</div></div>
   </section>`}
 
+function cardioNote(m){const c=m.cardio[lang]||m.cardio.en;return `<div class="note cardio"><h3>${t('cardio_h')}</h3><p><b>${c[st.planDay]}</b></p><ul>${c.all.map(x=>`<li>${x}</li>`).join('')}</ul></div>`}
+
 /* ============ MODAL ============ */
 function openEx(k){
   const ex=X(k),m=member(st.view==='program'&&st.progTab==='next'?st.planMember:st.member);
   let rows='';
-  if(m.loads[k])rows+=`<div class="note"><h3>${t('old_block',{name:first(m)})}</h3><p class="num">${ex.bw?t('held_modal'):`${loadTxt(k,m.loads[k][0])} → ${loadTxt(k,m.loads[k][1])} (${fmtPct(pct(m.loads[k][0],m.loads[k][1]))})`}</p></div>`;
+  if(m.loads[k])rows+=`<div class="note"><h3>${t('old_block',{name:first(m)})}</h3><p class="num">${m.assist?.[k]?`${t('assisted',{v:fmt(m.assist[k][0])})} → −${fmt(m.assist[k][1])} ${t('kg')}`:ex.bw?t('held_modal'):`${loadTxt(k,m.loads[k][0])} → ${loadTxt(k,m.loads[k][1])} (${fmtPct(pct(m.loads[k][0],m.loads[k][1]))})`}</p></div>`;
   const nd=DAYS.find(d=>NEXT[d].some(i=>i.k===k));
   if(nd){const it=NEXT[nd].find(i=>i.k===k);rows+=`<div class="note"><h3>${t('next_block',{day:dL(nd),role:roleN(it.r)})}</h3><div class="tscroll"><table><thead><tr><th>${t('th_phase')}</th><th>${t('th_sr')}</th><th class="r">${t('th_load')}</th></tr></thead><tbody>${Object.keys(PH).map(p=>{const o=planItem(m,it,PH[p].w[0]);return `<tr><td>${phN(p)}</td><td class="num">${p==='test'&&it.r==='main'?t('top3'):o.sets+' × '+o.repsTxt}</td><td class="r num">${o.load}</td></tr>`}).join('')}</tbody></table></div><p style="font-size:12px">${t('first_week')}</p></div>`}
   const md=$('#modal');clearTimeout(closeT);md.classList.remove('open');
